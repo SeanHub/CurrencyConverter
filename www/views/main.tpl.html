@@ -1,0 +1,25 @@
+<ion-pane ion-side-menu-content>
+	<header class="bar bar-header bar-assertive">
+		<button class="button icon ion-navicon" ng-click="openLeft()"></button>
+		<h1 class="title">Currencies</h1>
+	</header>
+	<ion-content has-header="true" padding="true">
+		<div class="list list-inset">
+			<label class="item item-input">
+				<input type="text" ng-change="makeConversion(amount)" ng-model="amount" placeholder="Amount">
+				<img class="main left input icon flag-icon" ng-class="'flag-icon-'+getBaseCountryCode()" ng-if="menuShowing()">
+			</label>
+			<label class="item item-input">
+				<input class="main input" type="text" ng-model="result" placeholder="Result" readonly>
+			</label>
+		</div>
+		<div class="list list-inset">
+			<div class="main item item-avatar item-icon-right" ng-click="selectCurrency(currency)" ng-repeat="currency in currencies">
+				<img class="main left icon flag-icon flag-icon-{{currency.country_code}}">
+				<h2>{{currency.rate}}</h2>
+				<p>{{currency.currency}}</p>
+				<span class="main right icon ion-checkmark-round" ng-if="selectedCurrency().currency == currency.currency"></span>
+			</div>
+		</div>
+	</ion-content>
+</ion-pane>

@@ -1,0 +1,11 @@
+{
+	"author": "Sean McCann",
+	"description": "Currencies Cordova Application",
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-wiredep": "latest"
+	},
+	"name": "Currencies",
+	"private": true,
+	"version": "1.0.0"
+}

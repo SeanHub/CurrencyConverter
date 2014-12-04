@@ -1,0 +1,16 @@
+<ion-side-menu side="left">
+	<header class="bar bar-header bar-dark sidebar header" fade-header>
+		<h1 class="title">Menu</h1>
+	</header>
+	<ion-content class="sidebar content" has-header="true" padding="true">
+		<button class="button button-block button-dark icon-left ion-arrow-down-c" ng-click="updateCurrencies()">
+			Update Currencies
+		</button>
+		<button class="button button-block button-dark icon-left ion-gear-a" ng-click="openBaseCurrencyPopup()">
+			Set Base Currency
+		</button>
+		<button class="button button-block button-dark icon-left ion-card" disabled>
+			{{baseCurrency().currency}}
+		</button>
+	</ion-content>
+</ion-side-menu>

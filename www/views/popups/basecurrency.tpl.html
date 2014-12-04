@@ -1,0 +1,7 @@
+<button class="button button-block button-stable" ng-click="selectBaseCurrency(currency)" ng-repeat="currency in currencies">
+	<span class="flag-icon flag-icon-{{currency.country_code}}"></span>
+	{{currency.currency}}
+</button>
+<button class="button button-block button-dark icon-left ion-close" ng-click="closePopup()">
+	Close
+</button>

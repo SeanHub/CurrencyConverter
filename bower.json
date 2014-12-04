@@ -1,0 +1,12 @@
+{
+	"dependencies": {
+		"angular": "1.2",
+		"flag-icon-css": "0.6",
+		"ionic": "0.9",
+        "sm-angular-popup": "0.5"
+	},
+	"name": "Currencies",
+	"resolutions": {
+		"angular": "1.2.23"
+	}
+}
